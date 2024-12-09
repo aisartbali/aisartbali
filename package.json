@@ -1,0 +1,15 @@
+{
+  "name": "new-web-ais-art",
+  "version": "1.0.0",
+  "main": "scripts.js",
+  "scripts": {
+    "dev": "npx vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.0.3"
+  }
+}
