@@ -1,0 +1,45 @@
+.border-none {
+    border: none;
+    background-color: tomato;
+}
+
+.border-solid {
+    border: 2px solid black;
+    background-color: tomato;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.wh-200 {
+    width: 200px;
+    height: 200px;
+}
+
+.wh-100 {
+    width: 100px;
+    height: 100px;
+}
+
+.wh-inherit {
+    width: inherit;
+    height: inherit;
+}
+
+.wh-full {
+    width: 100%;
+    height: 100%;
+}
