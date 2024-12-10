@@ -1,0 +1,184 @@
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CAEBF2;
+    color:   #D9AE6A;
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Start as transparent */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; /* Z-index lebih tinggi dari banner */
+}
+
+.navbar ul {
+    padding-left: 0;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar.scrolled {
+    background-color: #CAEBF2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for effect */
+}
+
+/* Brand Section */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Sembunyikan company-name untuk layar kecil, termasuk Galaxy Fold 2 saat dilipat */
+@media (max-width: 936px) {
+    .company-name {
+        display: none;
+    }
+}
+
+/* Menu Section */
+.navbar-menu {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    font-weight: 400;
+    margin: auto;
+}
+
+.navbar-menu li {
+    margin: 10px 20px;
+    position: relative;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar-menu i {
+    margin-left: 10px;
+}
+
+.dropdown {
+    width: 200px;
+    display: grid;
+    grid-template-rows: 0fr;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    translate: -50% 0;
+    background-color: #D9AE6A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: 10px;
+
+    transition: grid-template-rows .3s;
+}
+
+.navbar-menu li:nth-child(2):hover .dropdown {
+    height: fit-content;
+    grid-template-rows: 1fr;
+}
+
+.navbar-menu li:nth-child(2) .nav-arrow {
+    transition: transform .2s ease-in;
+}
+
+.navbar-menu li:nth-child(2):hover .nav-arrow {
+    transform: rotate(.5turn);
+}
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.dropdown ul li {
+    width: 100px;
+    padding: 5px;
+}
+
+.navbar-menu a:hover {
+    color: #1e90ff;
+}
+
+.hamburger-icon {
+    font-size: 24px; /* Ukuran ikon */
+    color: rgb(255, 255, 255); /* Warna ikon */
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+
+/* Untuk layar kecil (lebar max 768px), tampilkan ikon hamburger */
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block; /* Tampilkan ikon hamburger */
+    }
+
+    .navbar-menu {
+        display: none; /* Sembunyikan menu navbar */
+        flex-direction: column; /* Menu tampil vertikal */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #CAEBF2;  
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-menu.show {
+        display: flex; /* Tampilkan menu saat ada class 'show' */
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        position: relative;
+        padding: 10px;
+    }
+
+    .navbar-menu li .dropdown {
+        width: 100px;
+        top: 10px;
+        left: -60px;
+    }
+
+    /* .navbar-menu li .dropdown::before {
+        content: '';
+    } */
+
+    .hamburger-icon {
+        display: block;
+    }
+}
+
+/* Gaya ikon hamburger berubah jadi silang */
+.hamburger-icon.cross {
+    content: "\f00d"; /* Ganti ke ikon FontAwesome (X) */
+}

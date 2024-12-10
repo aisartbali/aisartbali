@@ -1,0 +1,168 @@
+/* Footer Section Styles */
+.footer {
+    width: 100%;
+    background-color:  #A9A9A9;
+    color: #213236;
+    padding: 10px 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Perhitungan konsisten */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact ul li {
+    margin: 10px 0;
+}
+
+.footer-contact ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.footer-contact ul li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-contact ul li a:hover {
+    color:  #FF3B3F;
+}
+
+/* Responsive Design footer */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .footer-logo, .footer-contact {
+        flex: 1;
+    }
+
+    .footer-contact ul li {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-contact ul li a {
+        justify-content: center; /* Teks akan berada di tengah */
+        text-align: center; /* Pastikan teks di dalam elemen disejajarkan */
+        font-size: 14px; /* Opsional, untuk menyesuaikan ukuran font */
+    }
+}
+
+
+/* Contact Footer Section Styles */
+.contact-footer {
+    width: 100%;
+    background-color:  #A9A9A9;
+    color: #213236;
+    padding: 10px 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Perhitungan konsisten */
+}
+
+.footer-containercontact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logocontact img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.contactfooter-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contactfooter-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactfooter-contact li {
+    margin: 10px 0;
+}
+
+.contactfooter-contact ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 35px;
+    align-items: center;
+    justify-content: left;
+}
+
+.contactfooter-contact ul li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.contactfooter-contact ul li a:hover {
+    color:  #FF3B3F;
+}
+
+/* Responsive Design footer */
+@media (min-width: 768px) {
+    .footer-containercontact {
+        flex-direction: row;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .footer-logocontact, .contactfooter-contact {
+        flex: 1;
+    }
+
+    .contactfooter-contact ul li {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactfooter-contact ul li a {
+        justify-content: center; /* Teks akan berada di tengah */
+        text-align: center; /* Pastikan teks di dalam elemen disejajarkan */
+        font-size: 14px; /* Opsional, untuk menyesuaikan ukuran font */
+    }
+}
