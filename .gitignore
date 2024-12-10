@@ -6,3 +6,6 @@ deps/deps
 
 # vite
 node_modules/.vite/
+
+_metadata.json
+package.json
