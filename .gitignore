@@ -3,3 +3,6 @@ node_modules/
 
 # Other dependencies
 deps/deps
+
+# vite
+.vite/
