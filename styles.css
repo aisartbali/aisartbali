@@ -399,7 +399,7 @@ html {
 @media (max-width: 884px) {
   /* Ubah tata letak kontainer menjadi kolom untuk layar kecil */
   .main-content2 .content-container2 {
-    flex-direction: column; /* Tata letak menjadi kolom */
+    flex-direction: column-reverse; /* Tata letak menjadi kolom */
     align-items: center; /* Tengahkan elemen */
   }
 
@@ -454,6 +454,7 @@ html {
   overflow: hidden;
   border: none;
   background: none;
+  cursor: pointer;
 
   transition: transform 0.2s, box-shadow 0.3s ease;
 }

@@ -1,10 +1,9 @@
 .navbar {
-    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #CAEBF2;
-    color:   #D9AE6A;
+    color: #D9AE6A;
     font-family: Poppins, sans-serif;
     position: fixed;
     width: 100%;
@@ -25,7 +24,7 @@
 }
 
 .navbar.scrolled {
-    background-color: #CAEBF2;
+    background-color: #56a9bc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for effect */
 }
 
@@ -38,7 +37,6 @@
 .navbar-brand img {
     width: 100px;
     height: 70px;
-    margin-right: 10px;
 }
 
 .company-name {
@@ -63,8 +61,19 @@
 }
 
 .navbar-menu li {
+    color: white;
+    cursor: default;
     margin: 10px 20px;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    transition: color .3s;
+}
+
+.navbar-menu li:hover {
+    color: #D9AE6A;
 }
 
 .navbar-menu a {
@@ -74,8 +83,8 @@
     transition: color 0.3s;
 }
 
-.navbar-menu i {
-    margin-left: 10px;
+.navbar-menu a:hover {
+    color: #D9AE6A;
 }
 
 .dropdown {
@@ -100,6 +109,9 @@
 }
 
 .navbar-menu li:nth-child(2) .nav-arrow {
+    width: 1.2rem;
+    height: 1.2rem;
+
     transition: transform .2s ease-in;
 }
 
@@ -120,24 +132,30 @@
     padding: 5px;
 }
 
-.navbar-menu a:hover {
-    color: #1e90ff;
+.dropdown ul li a:hover {
+    color: black;
 }
 
-.hamburger-icon {
-    font-size: 24px; /* Ukuran ikon */
-    color: rgb(255, 255, 255); /* Warna ikon */
-    cursor: pointer;
+.nav-icon.navbar-bars {
     display: none;
-    margin-right: 20px;
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
 }
 
-/* Untuk layar kecil (lebar max 768px), tampilkan ikon hamburger */
-@media (max-width: 768px) {
-    .hamburger-icon {
-        display: block; /* Tampilkan ikon hamburger */
-    }
+.nav-icon.navbar-cross {
+    display: none;
+    width: 1.7rem;
+    height: 1.7rem;
+    object-fit: cover;
+}
 
+.nav-icon.navbar-cross, .nav-icon.navbar-bars {
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
     .navbar-menu {
         display: none; /* Sembunyikan menu navbar */
         flex-direction: column; /* Menu tampil vertikal */
@@ -150,11 +168,11 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    .navbar-menu.show {
-        display: flex; /* Tampilkan menu saat ada class 'show' */
+    .nav-icon.navbar-bars {
+        display: block;
     }
 
-    .navbar-menu.active {
+    .show {
         display: flex;
     }
 
@@ -164,21 +182,12 @@
     }
 
     .navbar-menu li .dropdown {
-        width: 100px;
+        width: 150px;
         top: 10px;
-        left: -60px;
+        left: -100px;
     }
 
     /* .navbar-menu li .dropdown::before {
         content: '';
     } */
-
-    .hamburger-icon {
-        display: block;
-    }
-}
-
-/* Gaya ikon hamburger berubah jadi silang */
-.hamburger-icon.cross {
-    content: "\f00d"; /* Ganti ke ikon FontAwesome (X) */
 }

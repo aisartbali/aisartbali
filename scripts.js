@@ -1,36 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Ambil elemen ikon hamburger dan menu navbar
-  const hamburger = document.getElementById("hamburger");
-  const navbarMenu = document.querySelector(".navbar-menu");
-
-  // Tambahkan event listener untuk klik ikon hamburger
-  hamburger.addEventListener("click", () => {
-    navbarMenu.classList.toggle("show");
-
-    // Toggle ikon hamburger jadi silang
-    if (hamburger.classList.contains("cross")) {
-      hamburger.classList.remove("cross");
-      hamburger.classList.replace("fa-times", "fa-bars");
-    } else {
-      hamburger.classList.add("cross");
-      hamburger.classList.replace("fa-bars", "fa-times");
-    }
-  });
-
-  // Tambahkan event listener untuk menu dropdown
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", (event) => {
-      event.preventDefault(); // Mencegah navigasi
-      const parent = toggle.parentElement;
-      parent.classList.toggle("active"); // Toggle kelas active
-    });
-  });
-});
-
 // JavaScript to toggle navbar background on scroll
 const navbar = document.getElementById("navbar");
+const list = document.querySelectorAll(".navbar-menu li, .navbar-menu a");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -40,9 +10,21 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const openModal = document.querySelectorAll('.open-modal');
-const modal = document.querySelectorAll('.img-slider');
+const bars = document.getElementById('bars');
+let clickBars = 0;
+const cross = document.getElementById('cross');
+let clickCross = 0;
+const navbarMenu = document.getElementById('navbar-main');
 
-openModal.forEach(btn => btn.addEventListener('click', () => {
-    modal.showModal();
-}))
+bars.addEventListener('click', () => {
+  bars.style.setProperty('display', 'none');
+  navbarMenu.classList.toggle('show');
+  cross.style.setProperty('display', 'block');
+})
+
+cross.addEventListener('click', () => {
+  cross.style.setProperty('display', 'none');
+  navbarMenu.classList.remove('show');
+  bars.style.setProperty('display', 'block');
+
+})

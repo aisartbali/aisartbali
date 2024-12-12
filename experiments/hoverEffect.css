@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 100%;
+}
+
+/* If the client browser does not support the newer version of animation, use this standart animation instead */
+/* @keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(5vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* the animation (alternative, when the client browser does not support scroll-driven animation property) */
+/* Fallback animation */
+/* .box1, .box2 {
+    animation: slide-in 1s linear;
+    margin: 2rem;
+} */
+
+@keyframes scroll-driven {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+/* If the client browser is the newer version */
+@supports (animation-timeline: view()) { 
+
+    .box1, .box2 {
+        animation: scroll-driven linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    
+        /* for margins */
+        margin: 2rem;
+    }
+
+}
+
+.box1 {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.box2 {
+    background-color: crimson;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
