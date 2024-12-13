@@ -166,3 +166,14 @@
         font-size: 14px; /* Opsional, untuk menyesuaikan ukuran font */
     }
 }
+
+.copyright-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+.copyright-text-container p {
+    margin-top: 2em;
+}
