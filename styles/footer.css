@@ -149,4 +149,43 @@
 
 .contactfooter-contact ul li a:hover {
     color:  #FF3B3F;
+<<<<<<< HEAD
+=======
+}
+
+/* Responsive Design footer */
+@media (min-width: 768px) {
+    .footer-containercontact {
+        flex-direction: row;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .footer-logocontact, .contactfooter-contact {
+        flex: 1;
+    }
+
+    .contactfooter-contact ul li {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactfooter-contact ul li a {
+        justify-content: center; /* Teks akan berada di tengah */
+        text-align: center; /* Pastikan teks di dalam elemen disejajarkan */
+        font-size: 14px; /* Opsional, untuk menyesuaikan ukuran font */
+    }
+}
+
+.copyright-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+.copyright-text-container p {
+    margin-top: 2em;
+>>>>>>> 059250538c1806cfe9064043b94f2bf06b572f05
 }
