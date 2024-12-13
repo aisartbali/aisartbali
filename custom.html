@@ -20,16 +20,17 @@
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body class="sculpture-page">
-    <!-- Navigasi -->
+    <!-- Sisipkan Navigasi -->
     <nav class="navbar" id="navbar">
       <div class="navbar-brand">
-        <img src="Logo/Logo putih.svg" alt="Logo AIS Art" />
+        <img src="Logo/Logo putih.svg" />
         <span class="company-name">AIS ART BALI COLLECTION</span>
       </div>
-      <ul class="navbar-menu">
+      <ul class="navbar-menu" id="navbar-main">
         <li><a href="index.html">Home</a></li>
         <li>
-          <a href="#">Products <i class="fas fa-caret-down"></i></a>
+          Products
+          <img class="nav-arrow" src="/assets/navDown.png" alt="Down Arrow" />
           <div class="dropdown">
             <ul>
               <li><a href="sculpture.html">Sculpture</a></li>
@@ -41,7 +42,7 @@
         <li><a href="shipping.html">Shipping</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <i class="fas fa-bars hamburger-icon" id="hamburger"></i>
+      <img class="navbar-bars" id="menu" src="/assets/menu.png" alt="Menu" />
     </nav>
 
     <!-- Banner -->
