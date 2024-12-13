@@ -10,21 +10,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const bars = document.getElementById('bars');
-let clickBars = 0;
-const cross = document.getElementById('cross');
-let clickCross = 0;
-const navbarMenu = document.getElementById('navbar-main');
+const menu = document.getElementById('menu');
+const navMain = document.getElementById('navbar-main');
 
-bars.addEventListener('click', () => {
-  bars.style.setProperty('display', 'none');
-  navbarMenu.classList.toggle('show');
-  cross.style.setProperty('display', 'block');
-})
+menu.addEventListener('click', () => {
+  const srcPath = menu.getAttribute('src');
 
-cross.addEventListener('click', () => {
-  cross.style.setProperty('display', 'none');
-  navbarMenu.classList.remove('show');
-  bars.style.setProperty('display', 'block');
-
+  if(srcPath === '/assets/menu.png') {
+    menu.src = '/assets/cross.png';
+  } else {
+    menu.setAttribute('src', '/assets/menu.png');
+  }
+  navMain.classList.toggle('show');
 })

@@ -10,6 +10,12 @@ html {
   overflow-x: hidden;
 }
 
+@supports (animation-timeline: view()) { 
+
+  
+
+}
+
 /* Banner */
 .banner {
   position: relative; /* Tambahkan ini untuk membuat elemen overlay mengikuti posisi .banner */
