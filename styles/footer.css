@@ -53,7 +53,7 @@
 .footer-contact ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -89,7 +89,7 @@
 @media (min-width: 768px) and (max-width: 869px) {
     .footer-contact {
         justify-content: center; /* Teks akan berada di tengah */
-        font-size: 14px; /* Opsional, untuk menyesuaikan ukuran font */
+        font-size: 0.875rem; /* Opsional, untuk menyesuaikan ukuran font */
     }
 }
 
@@ -103,4 +103,5 @@
 .copyright-text-container p {
     margin: 2em;
     text-align: center;
+    font-size: 0.875rem;
 }
