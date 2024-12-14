@@ -614,9 +614,6 @@ html {
   .shipping-section h2 {
     font-size: 1.375rem;
   }
-  .shipping-section p {
-    font-size: 0.625rem;
-  }
   .Shipping-gallery img {
     grid-template-columns: repeat(2, 1fr); /* 2 kolom di perangkat kecil */
   }
@@ -625,11 +622,9 @@ html {
     grid-template-columns: repeat(2, 1fr); /* 2 kolom di perangkat kecil */
   }
   .highlight-banner {
-    font-size: 0.625rem;
     padding: 0.938rem;
   }
   .feature-item h1 {
-    font-size: 0.625rem;
     padding: 0.625rem;
   }
 }
