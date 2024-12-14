@@ -3,80 +3,64 @@
     width: 100%;
     background-color:  #A9A9A9;
     color: #213236;
+    padding: 10px 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Perhitungan konsisten */
+}
+
+.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.footer-logo {
-    width: 200px;
-    height: 200px;
+    text-align: center;
 }
 
 .footer-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100px;
+    margin-bottom: 10px;
 }
 
-.footer-contact {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+.footer-logo p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .footer-contact h3 {
-    font-size: 1.8rem;
-    margin-block: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .footer-contact ul {
-    margin-top: 0;
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .8rem;
+    margin: 0;
+}
+
+.footer-contact ul li {
+    margin: 10px 0;
 }
 
 .footer-contact ul li a {
-    width: fit-content;
     color: #ffffff;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    transition: color .2s;
+    justify-content: left;
 }
 
-.footer-contact ul li a img {
-    width: 20px;
+.footer-contact ul li a i {
+    margin-right: 10px;
+    font-size: 18px;
 }
 
 .footer-contact ul li a:hover {
-    color: #D9AE6A;
+    color:  #FF3B3F;
 }
 
-@media (min-width: 350px) {
-    .footer-contact h3 {
-        font-size: 2rem;
-        margin-block: 0;
-    }
-
-    .footer-contact ul li a {
-        font-size: 1.2rem;
-    }
-}
-
+/* Responsive Design footer */
 @media (min-width: 768px) {
     .footer-container {
         flex-direction: row;
@@ -85,13 +69,20 @@
         padding: 0 20px;
     }
 
-    .footer-contact h3 {
-        font-size: 2.5rem;
-        margin-block: 0;
+    .footer-logo, .footer-contact {
+        flex: 1;
     }
 
     .footer-contact ul li {
         justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-contact ul li a {
+        justify-content: center; /* Teks akan berada di tengah */
+        text-align: center; /* Pastikan teks di dalam elemen disejajarkan */
+        font-size: 14px; /* Opsional, untuk menyesuaikan ukuran font */
     }
 }
 
@@ -149,8 +140,6 @@
 
 .contactfooter-contact ul li a:hover {
     color:  #FF3B3F;
-<<<<<<< HEAD
-=======
 }
 
 /* Responsive Design footer */
@@ -187,5 +176,4 @@
 
 .copyright-text-container p {
     margin-top: 2em;
->>>>>>> 059250538c1806cfe9064043b94f2bf06b572f05
 }
