@@ -26,14 +26,9 @@
 }
 
 .contact-logo img {
-    width: 200px;
+    width: 12.5rem;
     margin-bottom: 0.625rem;
 }
-
-/* .contact-text-container h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.625rem;
-} */
 
 .contact-text-container {
     font-size: 1.25rem;
@@ -53,7 +48,7 @@
 .contact-text-container ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,10 +69,7 @@
 /* if needed */
 @media (min-width: 768px) {
     .contact-text-container {
-        /* flex-direction: row; */
-        /* justify-content: space-between; */
         align-items: center;
-        /* text-align: left; */
         padding: 0 1.25rem;
     }
 
@@ -90,6 +82,6 @@
     .contact-text-container ul li a {
         justify-content: center; /* Teks akan berada di tengah */
         text-align: center; /* Pastikan teks di dalam elemen disejajarkan */
-        font-size: 14px; /* Opsional, untuk menyesuaikan ukuran font */
+        font-size: 0.875rem; /* Opsional, untuk menyesuaikan ukuran font */
     }
 }
