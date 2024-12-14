@@ -3,7 +3,7 @@
     width: 100%;
     background-color:  #A9A9A9;
     color: #213236;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box; /* Perhitungan konsisten */
@@ -19,18 +19,18 @@
 
 .footer-logo img {
     width: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .footer-logo p {
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: bold;
     margin: 0;
 }
 
 .footer-contact h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
 }
 
 @media (max-width: 425px) {
@@ -47,7 +47,7 @@
 }
 
 .footer-contact ul li {
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 .footer-contact ul li a {
@@ -60,8 +60,8 @@
 }
 
 .footer-contact ul li a i {
-    margin-right: 10px;
-    font-size: 18px;
+    margin-right: 0.625rem;
+    font-size: 1.125rem;
 }
 
 .footer-contact ul li a:hover {
@@ -74,7 +74,7 @@
         flex-direction: row;
         justify-content: flex-start;
         text-align: left;
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
     .footer-logo, .footer-contact {

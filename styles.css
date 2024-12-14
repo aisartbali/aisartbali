@@ -8,6 +8,7 @@ html {
   box-sizing: border-box;
   background-color: #e4e3e3; /* Background utama yang lembut */
   overflow-x: hidden;
+  font-size: 100%;
 }
 
 @supports (animation-timeline: view()) { 
@@ -20,13 +21,13 @@ html {
 .banner {
   position: relative; /* Tambahkan ini untuk membuat elemen overlay mengikuti posisi .banner */
   background: url("Homepage image/Banner image 2.jpg") center/cover no-repeat;
-  height: 300px;
+  height: 18.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
-  padding: 100px;
+  padding: 6.25rem;
   margin-top: 0px; /* Menambahkan margin untuk memberi jarak dengan navbar yang fixed */
 }
 
@@ -68,12 +69,6 @@ html {
 
 /* Responsive banner Design */
 @media (max-width: 768px) {
-  /* Banner */
-  .banner {
-    height: 200px;
-    padding: 150px;
-  }
-
   .banner-content h1 {
     font-size: 2rem;
     max-width: 100%;
@@ -94,7 +89,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 350px;
+  padding: 21.875rem;
   margin-top: 0px; /* Menambahkan margin untuk memberi jarak dengan navbar yang fixed */
 }
 
@@ -120,7 +115,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 200px;
+  padding: 12.5rem;
   margin-top: 0px; /* Menambahkan margin untuk memberi jarak dengan navbar yang fixed */
 }
 
@@ -140,34 +135,25 @@ html {
   z-index: 1; /* Agar overlay berada di atas gambar */
 }
 
-/* Responsive banner Design */
-@media (max-width: 768px) {
-  /* Banner */
-  .banner-sclupture {
-    height: 200px;
-    padding: 150px;
-  }
-}
-
 /* Konten Utama */
 .main-content .content-container {
   position: relative;
   display: flex;
   justify-content: space-between; /* Pisahkan elemen */
   align-items: flex-start; /* Sejajarkan elemen di atas */
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
-  gap: 20px;
+  gap: 1.25rem;
   flex-wrap: wrap; /* Responsif pada layar kecil */
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   font-family: Poppins, sans-serif;
 }
 
 .content-text {
   flex: 1; /* Alokasikan ruang */
-  min-width: 250px; /* Batas minimum agar tidak terlalu kecil */
+  min-width: 15.625rem; /* Batas minimum agar tidak terlalu kecil */
   max-width: 90%; /* Mengurangi lebar agar lebih nyaman di layar kecil */
-  margin-right: 20px;
+  margin-right: 1.25rem;
   position: relative;
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
@@ -183,17 +169,17 @@ html {
   font-size: 1.8rem;
   color: #213236;
   text-align: left;
-  margin-top: 100px; /* Opsional, atur jarak atas */
+  margin-top: 6.25rem; /* Opsional, atur jarak atas */
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
 
 .content-text p {
-  margin: 10px 0;
+  margin: 0.625rem 0;
   line-height: 1.6;
   color: #555;
   text-align: justify;
   font-weight: 200;
-  margin-top: 20px; /* Opsional, atur jarak atas */
+  margin-top: 1.25rem; /* Opsional, atur jarak atas */
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
 
@@ -201,8 +187,8 @@ html {
   position: relative; /* Default, tidak mutlak posisinya */
   width: 100%; /* Pastikan gambar mengikuti lebar kolom teks */
   height: auto; /* Pertahankan proporsi gambar */
-  border-radius: 10px; /* Tambahkan sudut melengkung */
-  margin-top: 20px; /* Beri jarak antara teks dan gambar */
+  border-radius: 0.625rem; /* Tambahkan sudut melengkung */
+  margin-top: 1.25rem; /* Beri jarak antara teks dan gambar */
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
 
@@ -211,13 +197,13 @@ html {
   flex: 1; /* Alokasikan ruang untuk gambar */
   display: flex;
   flex-direction: column; /* Tumpuk gambar secara vertikal */
-  gap: 15px;
+  gap: 0.938rem;
 }
 
 .content-images img {
-  width: 300px;
+  width: 18.75rem;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
 
@@ -232,24 +218,6 @@ html {
   .content-text {
     margin-right: 0; /* Hilangkan margin kanan agar terlihat rapi */
     text-align: center; /* Pusatkan teks */
-  }
-
-  .content-images img {
-    margin-top: 20px; /* Tambahkan jarak antara teks dan gambar */
-  }
-}
-
-@media (max-width: 768px) {
-  /* Untuk layar kecil (tablet atau lebih kecil) */
-  .content-text img img-hover {
-    max-width: 300px; /* Kurangi lebar maksimum untuk layar kecil */
-  }
-}
-
-@media (max-width: 480px) {
-  /* Untuk layar sangat kecil (ponsel) */
-  .content-text img img-hover {
-    max-width: 200px; /* Lebih kecil lagi pada ponsel */
   }
 }
 
@@ -273,7 +241,7 @@ html {
   height: 1px; /* Ketebalan garis */
   background-color: #213236; /* Warna garis */
   width: 100%; /* Lebar garis */
-  margin-top: 25px; /* Opsional, atur jarak atas */
+  margin-top: 1.563rem; /* Opsional, atur jarak atas */
 }
 
 /* konten utama 2 */
@@ -283,20 +251,20 @@ html {
   display: flex;
   justify-content: space-between; /* Pisahkan elemen */
   align-items: flex-start; /* Sejajarkan elemen di atas */
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   height: auto;
-  gap: 15px;
+  gap: 0.938rem;
   flex-wrap: wrap; /* Responsif pada layar kecil */
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   font-family: Poppins, sans-serif;
 }
 
 .content-text2 {
   flex: 1; /* Alokasikan ruang */
-  min-width: 250px; /* Batas minimum agar tidak terlalu kecil */
+  min-width: 15.625rem; /* Batas minimum agar tidak terlalu kecil */
   max-width: 90%; /* Mengurangi lebar agar lebih nyaman di layar kecil */
-  margin-right: 20px;
+  margin-right: 1.25rem;
   position: relative;
   text-align: justify;
   height: auto; /* Pertahankan rasio gambar */
@@ -311,11 +279,11 @@ html {
 }
 
 .content-text2 p {
-  margin: 10px 0;
+  margin: 0.625rem 0;
   line-height: 1.6;
   color: #555;
   font-weight: 200;
-  margin-bottom: 5px; /* Atur jarak bawah */
+  margin-bottom: 0.313rem; /* Atur jarak bawah */
   height: auto; /* Pertahankan rasio gambar */
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
@@ -324,24 +292,24 @@ html {
   flex: 1; /* Alokasikan ruang untuk gambar */
   display: flex;
   flex-direction: column; /* Tumpuk gambar secara vertikal */
-  gap: 15px;
+  gap: 0.938rem;
   height: auto; /* Pertahankan rasio gambar */
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
 
 .content-images2 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   height: auto; /* Pertahankan rasio gambar */
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
 
 .content-text2 img {
   width: 100%;
-  height: 553px;
-  border-radius: 10px;
-  margin: 10px 0;
-  margin-top: 5px; /* Opsional, atur jarak atas */
+  height: 34.563rem;
+  border-radius: 0.625rem;
+  margin: 0.625rem 0;
+  margin-top: 0.313rem; /* Opsional, atur jarak atas */
 }
 
 .text-content {
@@ -350,7 +318,7 @@ html {
 
 .text-content h1 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .text-content p {
@@ -362,9 +330,9 @@ html {
 /* konten utama 3 */
 .content-text3 {
   background-color: #d9ae6a;
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 200;
-  padding: 5px;
+  padding: 0.313rem;
   margin: 0px 0;
   text-align: center;
   color: #ffffff;
@@ -392,12 +360,12 @@ html {
 .content-images {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0.938rem;
 }
 
 .content-images img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 /* Responsive Design Konten utama 2*/
@@ -419,13 +387,13 @@ html {
   }
 
   .content-images2 {
-    margin-top: 20px; /* Tambahkan jarak antara teks dan gambar */
+    margin-top: 0.625rem; /* Tambahkan jarak antara teks dan gambar */
   }
 }
 
 @media (max-width: 320px) {
   .content-images2 img {
-    max-width: 400px;
+    max-width: 25rem;
   }
 }
 
@@ -445,13 +413,13 @@ html {
 
 .best-seller h2 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .best-seller .items {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
 }
 
 .best-seller .open-modal {
@@ -467,12 +435,12 @@ html {
 .best-seller img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .best-seller .open-modal:hover {
   transform: scale(1.1); /* Memperbesar gambar */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Menambah bayangan */
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2); /* Menambah bayangan */
 }
 
 .best-seller .img-slider::backdrop {
@@ -497,39 +465,39 @@ html {
   justify-content: center; /* Pusatkan secara vertikal */
   align-items: center; /* Pusatkan secara horizontal */
   text-align: center; /* Teks di dalam section juga terpusat */
-  margin: 20px auto; /* Beri ruang di sekitar setiap section */
+  margin: 1.25rem auto; /* Beri ruang di sekitar setiap section */
   width: 90%; /* Pastikan konten responsif */
-  max-width: 1200px; /* Tentukan batas maksimum lebar */
+  max-width: 75rem; /* Tentukan batas maksimum lebar */
   font-family: Poppins, sans-serif;
 }
 
 .sculpture-content h1 {
   color: #213236;
   background-color: #d9ae6a;
-  border-radius: 10px; /* Opsional: Tambahkan border melengkung */
-  padding: 5px 10px; /* Tambahkan ruang di sekitar teks */
+  border-radius: 0.625rem; /* Opsional: Tambahkan border melengkung */
+  padding: 0.313rem 0.625rem; /* Tambahkan ruang di sekitar teks */
   display: inline-block; /* Supaya padding hanya berlaku untuk teks */
 }
 
 .sculpture-content p {
   font-weight: 200;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #6c6c6c;
 }
 .gallery-img {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: grid; /* Gunakan Grid Layout */
   grid-template-columns: repeat(5, 1fr); /* 4 kolom dengan lebar yang sama */
-  gap: 20px; /* Jarak antar gambar */
+  gap: 1.25rem; /* Jarak antar gambar */
   justify-content: center; /* Pusatkan grid secara horizontal */
 }
 
 .gallery-img img {
   width: 100%; /* Pastikan gambar responsif */
-  max-width: 200px; /* Batas maksimum lebar gambar */
+  max-width: 12.5rem; /* Batas maksimum lebar gambar */
   height: auto; /* Menjaga proporsi gambar */
-  border-radius: 10px; /* Opsional: Tambahkan border melengkung */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: Tambahkan efek bayangan */
+  border-radius: 0.625rem; /* Opsional: Tambahkan border melengkung */
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Opsional: Tambahkan efek bayangan */
   transition: all 0.3s ease; /* Tambahkan animasi halus saat hover */
 }
 
@@ -558,23 +526,23 @@ html {
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
   position: relative;
   text-align: center;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
   font-family: Poppins, sans-serif;
 }
 
 .shipping-section h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
   color: #213236;
 }
 .shipping-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
   color: #213236;
 }
 .shipping-section p {
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
   color: #495057;
 }
 
@@ -583,7 +551,7 @@ html {
   height: auto;
   grid-template-columns: repeat(4, 1fr);
   display: grid;
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: center;
 }
 .Shipping-gallery img {
@@ -591,19 +559,19 @@ html {
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
 }
 
 .highlight-banner {
   background-color: #ef233c;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  padding: 20px;
-  margin: 40px 0;
+  padding: 1.25rem;
+  margin: 2.5rem 0;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .features {
@@ -614,40 +582,37 @@ html {
 }
 .feature-item {
   color: #000000;
-  gap: 20px;
-  padding: 15px;
-  border-radius: 8px;
+  gap: 1.25rem;
+  padding: 0.938rem;
+  border-radius: 0.5rem;
   font-weight: 500;
 }
 
 .feature-item h1 {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0; /* Menghapus margin default */
 }
 
 .Shipping-galery2 {
   grid-template-columns: repeat(4, 1fr);
   display: grid;
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: center;
 }
 .Shipping-galery2 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
 }
 
 /* Media Shipping */
 @media (max-width: 768px) {
   .shipping-section h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .shipping-section h2 {
-    font-size: 22px;
-  }
-  .shipping-section p {
-    font-size: 10px;
+    font-size: 1.375rem;
   }
   .Shipping-gallery img {
     grid-template-columns: repeat(2, 1fr); /* 2 kolom di perangkat kecil */
@@ -657,11 +622,9 @@ html {
     grid-template-columns: repeat(2, 1fr); /* 2 kolom di perangkat kecil */
   }
   .highlight-banner {
-    font-size: 10px;
-    padding: 15px;
+    padding: 0.938rem;
   }
   .feature-item h1 {
-    font-size: 10px;
-    padding: 10px;
+    padding: 0.625rem;
   }
 }
