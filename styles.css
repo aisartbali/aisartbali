@@ -20,7 +20,7 @@ html {
 /* Banner */
 .banner {
   position: relative; /* Tambahkan ini untuk membuat elemen overlay mengikuti posisi .banner */
-  background: url("Homepage image/Banner image 2.jpg") center/cover no-repeat;
+  background: url("Homepage image/Banner image 3.jpg") center/cover no-repeat;
   height: 18.75rem;
   display: flex;
   align-items: center;
