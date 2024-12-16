@@ -29,13 +29,13 @@
 }
 
 .footer-contact h3 {
+    text-align: center;
     font-size: 1.25rem;
     margin-bottom: 0.625rem;
 }
 
 @media (max-width: 425px) {
     .footer-contact h3 {
-        text-align: center;
         font-size: 1.5rem;
     }
 }
@@ -79,6 +79,10 @@
 
     .footer-logo, .footer-contact {
         flex: 1;
+    }
+
+    .footer-contact h3 {
+        text-align: left;
     }
 
     .footer-contact ul li {

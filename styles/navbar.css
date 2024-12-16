@@ -100,7 +100,7 @@
     z-index: 10;
     border-radius: 0.625rem;
 
-    transition: grid-template-rows .3s;
+    transition: grid-template-rows .5s;
 }
 
 .navbar-menu li:nth-child(2):hover .dropdown {
@@ -168,14 +168,9 @@
     }
 
     .navbar-menu li .dropdown {
-        width: 150px;
-        top: 0.625rem;
-        left: -100px;
+        width: 160px;
+        left: 54%;
     }
-
-    /* .navbar-menu li .dropdown::before {
-        content: '';
-    } */
 }
 
 .show {
