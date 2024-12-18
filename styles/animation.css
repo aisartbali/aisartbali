@@ -1,6 +1,18 @@
-@keyframes scroll-driven {
+@keyframes scroll-up {
     from {
-        opacity: 0;
+        opacity: 1;
+        /* transform: scale(0.5); */
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scroll-down {
+    from {
+        opacity: 1;
         transform: scale(0.5);
     }
 
@@ -10,18 +22,50 @@
     }
 }
 
+/* for global text */
+.animate-text {
+    opacity: 1; /* Initially hidden */
+    transform: scale(0.5); /* Corrected scale syntax */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
 /* for homepage */
-.main-content, .content-container, .content-text, .img-hover, .content-images, .line, .custom-line, .main-content2, .content-container2, .content-text2, .custom-line2, .content-images2, .content-text3, .best-seller, .items, .open-modal {
+.main-content, .content-container, .content-text, .img-hover, .content-images, .line, .custom-line, .main-content2, .content-container2, .content-text2, .custom-line2, .content-images2, .content-text3, .open-modal {
+    opacity: 1; /* Initially hidden */
+    transform: scale(0.5); /* Corrected scale syntax */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* for products */
+.sculpture-content, .gallery-img, .gallery-img {
     opacity: 0; /* Initially hidden */
     transform: scale(0.5); /* Corrected scale syntax */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* for shipping */
+.Shipping-gallery, .features, .feature-item, .highlight-banner, .Shipping-galery2, .shipping-intro-h {
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.5); /* Corrected scale syntax */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* for contact */
+.contact-logo {
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.5); /* Corrected scale syntax */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 /* Class to trigger animation */
-.animate {
-    animation: scroll-driven 1s forwards;
+.animate-up {
+    animation: scroll-up 1s forwards;
+}
+
+.animate-down {
+    animation: scroll-down 1s forwards;
 }
 
 .spacer {
-    height: 1.25rem;
+    height: 3rem;
 }
