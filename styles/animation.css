@@ -1,0 +1,27 @@
+@keyframes scroll-driven {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* for homepage */
+.main-content, .content-container, .content-text, .img-hover, .content-images, .line, .custom-line, .main-content2, .content-container2, .content-text2, .custom-line2, .content-images2, .content-text3, .best-seller, .items, .open-modal {
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.5); /* Corrected scale syntax */
+}
+
+/* Class to trigger animation */
+.animate {
+    animation: scroll-driven 1s forwards;
+}
+
+.spacer {
+    height: 1.25rem;
+}
