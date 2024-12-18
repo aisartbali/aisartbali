@@ -30,8 +30,8 @@
 }
 
 /* for homepage */
-.main-content, .content-container, .content-text, .img-hover, .content-images, .line, .custom-line, .main-content2, .content-container2, .content-text2, .custom-line2, .content-images2, .content-text3, .open-modal {
-    opacity: 1; /* Initially hidden */
+.img-hover, .line, .custom-line, .custom-line2, .open-modal {
+    opacity: 1; 
     transform: scale(0.5); /* Corrected scale syntax */
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
