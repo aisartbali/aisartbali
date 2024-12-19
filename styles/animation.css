@@ -30,7 +30,7 @@
 }
 
 /* for homepage */
-.img-hover, .line, .custom-line, .custom-line2, .open-modal {
+.img-hover, .line, .custom-line, .custom-line2 {
     opacity: 1; 
     transform: scale(0.5); /* Corrected scale syntax */
     transition: opacity 0.5s ease, transform 0.5s ease;

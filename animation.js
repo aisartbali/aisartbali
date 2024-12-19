@@ -1,6 +1,6 @@
 // For animation
 // Select all elements to animate
-const animatedElements = document.querySelectorAll('.img-hover, .line, .custom-line, .custom-line2, .best-seller, .open-modal, .sculpture-content, .gallery-img, .gallery-img, .Shipping-gallery, .features, .feature-item, .highlight-banner, .Shipping-galery2, .shipping-intro-h, .contact-logo, .animate-text-contact, .animate-text');
+const animatedElements = document.querySelectorAll('.img-hover, .line, .custom-line, .custom-line2, .best-seller, .sculpture-content, .gallery-img, .gallery-img, .Shipping-gallery, .features, .feature-item, .highlight-banner, .Shipping-galery2, .shipping-intro-h, .contact-logo, .animate-text-contact, .animate-text');
 
 // // Intersection Observer setup
 // const observer = new IntersectionObserver(

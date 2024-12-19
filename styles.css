@@ -416,10 +416,84 @@ html {
   margin-bottom: 1.25rem;
 }
 
-.best-seller .items {
+.best-seller button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  top: 50%; /* Center vertically */
+  z-index: 10; /* Ensure buttons appear above grid */
+  font-size: 1.5rem; /* Adjust size as needed */
+}
+
+.best-seller button svg {
+  fill: #333; /* Adjust SVG color */
+  width: 3rem;
+  height: 3rem;
+}
+
+.best-seller button.prev {
+  left: 0; /* Align to the left */
+}
+
+.best-seller button.next {
+  right: 0; /* Align to the right */
+}
+
+.best-seller img {
+  width: 100%;
+  height: auto;
+}
+
+/* .best-seller .items { */
+  /* display: grid;
+  place-items: center;
+  height: inherit;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-rows: auto; */
+  /*display: flex; */ /* Switch to Flexbox layout */
+  /* flex-wrap: nowrap; */ /* Prevent wrapping, ensuring a horizontal layout */
+  /*overflow-x: auto; */ /* Enable horizontal scrolling if necessary */
+  /* scroll-snap-type: x mandatory; */ /* Enable snap scrolling for better UX */
+  /* gap: 1.25rem; */
+  /* gap: 0 0.5rem;
+  grid-auto-rows: 0;
+  overflow: hidden; */
+  /* grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr)); */
+/* }  */
+
+.best-seller .grid {
   display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+  gap: 0 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-rows: auto;
+  grid-auto-rows: 0;
+  overflow: hidden;
+  height: inherit;
+}
+
+/* Stop generating additional columns at 1440px */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .best-seller .grid {
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+  }
+}
+
+.grid-child {
+  display: grid;
+  place-items: center;
+  background: #141414;
+}
+
+/* hide the scrollbar when overflow */
+.best-seller .items::-webkit-scrollbar {
+  display: none; /* Optional: Hide the scrollbar for a cleaner look */
+}
+
+.best-seller .items > * {
+  flex: 0 0 auto; /* Ensure items don't shrink and retain their size */
+  width: 9.375rem; /* Set the minimum size for items */
+  scroll-snap-align: start; /* Align items when scrolling */
 }
 
 .best-seller .open-modal {
@@ -447,15 +521,28 @@ html {
   background-color: #000000;
 }
 
+.best-seller-container { 
+  position: relative; /* Position container relative for absolute positioning of buttons */
+  display: flex;
+  align-items: center;
+}
+
 /* Tambahkan media query untuk penyesuaian lebih lanjut jika diperlukan */
-@media (min-width: 768px) {
+/* 4 gambar berdampingan di layar besar */
+/* @media (min-width: 768px) {
   .best-seller .items {
     grid-template-columns: repeat(
       4,
       1fr
-    ); /* 4 gambar berdampingan di layar besar */
+    ); 
   }
 }
+
+@media (max-width: 768px) {
+  .best-seller .items {
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+  }
+} */
 
 /* Sculpture page */
 
