@@ -678,6 +678,11 @@ html {
   align-items: center;
 }
 
+.swiper-pagination {
+  --swiper-pagination-bullet-inactive-color: #CAEBF2;
+  --swiper-pagination-color: #D9AE6A;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: #d9ae6a;
