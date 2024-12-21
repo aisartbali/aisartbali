@@ -11,6 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- This is for Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -21,7 +26,6 @@
     <link rel="stylesheet" href="./styles/animation.css" />
   </head>
   <body>
-
     <!-- Sisipkan Navigasi -->
     <nav class="navbar" id="navbar">
       <div class="navbar-brand">
@@ -30,7 +34,7 @@
       </div>
 
       <div class="spacer"></div>
-      
+
       <ul class="navbar-menu" id="navbar-main">
         <li><a href="index.html">Home</a></li>
         <li>
@@ -49,7 +53,6 @@
       </ul>
       <img class="navbar-bars" id="menu" src="/assets/menu.png" alt="Menu" />
     </nav>
-    
 
     <!-- Banner -->
     <section class="banner">
@@ -155,64 +158,97 @@
 
     <!-- Best Seller Section -->
     <section class="best-seller">
-      <h2 class="animate-text">Best Seller Items</h2>
-      <div class="items">
-        <button class="open-modal">
-          <img src="Best seller/Kong boxing.jpg" alt="img 1" class="animate-text"/>
-        </button>
-        <button class="open-modal">
-          <img src="Best seller/Kong graffiti.jpg" alt="img 2" class="animate-text"/>
-        </button>
-        <button class="open-modal">
-          <img src="Best seller/Kaws black.jpg" alt="img 3" class="animate-text"/>
-        </button>
-        <button class="open-modal">
-          <img src="Best seller/Bearbrick.jpg" alt="img 4" class="animate-text"/>
-        </button>
+      <h2>Best Seller Items</h2>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <button class="open-modal">
+              <img src="Best seller/Kong boxing.jpg" alt="img 1" />
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button class="open-modal">
+              <img src="Best seller/Kong graffiti.jpg" alt="img 2" />
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button class="open-modal">
+              <img src="Best seller/Kaws black.jpg" alt="img 3" />
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button class="open-modal">
+              <img src="Best seller/Bearbrick.jpg" alt="img 4" />
+            </button>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div style="--swiper-pagination-bullet-inactive-color: #CAEBF2; --swiper-pagination-color: #D9AE6A" class="swiper-pagination"></div>
       </div>
+      <!-- <div class="swiper">
+        <div class="swiper-wrapper">
+          
+          
+          
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div> -->
     </section>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
-          <!-- Logo dan Nama Perusahaan -->
-          <div class="footer-logo">
-              <img src="Logo/logo ais art.svg" alt="AIS Art Bali Collection Logo">
-          </div>
-          <!-- Kontak -->
-          <div class="footer-contact">
-              <h3>Contact Us</h3>
-              <ul>
-                  <li>
-                      <a href="mailto:aisartbalicollection@gmail.com">
-                          <i class="fas fa-envelope"></i> aisartbalicollection@gmail.com
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://wa.me/+6287887480508" target="_blank">
-                          <i class="fab fa-whatsapp"></i> +62 878-8748-0508
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://instagram.com/aisartbalicollection" target="_blank">
-                          <i class="fab fa-instagram"></i> Instagram
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://facebook.com/aisartbalicollection" target="_blank">
-                          <i class="fab fa-facebook"></i> Facebook
-                      </a>
-                  </li>
-              </ul>
-          </div>
+        <!-- Logo dan Nama Perusahaan -->
+        <div class="footer-logo">
+          <img src="Logo/logo ais art.svg" alt="AIS Art Bali Collection Logo" />
+        </div>
+        <!-- Kontak -->
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <a href="mailto:aisartbalicollection@gmail.com">
+                <i class="fas fa-envelope"></i> aisartbalicollection@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/+6287887480508" target="_blank">
+                <i class="fab fa-whatsapp"></i> +62 878-8748-0508
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/aisartbalicollection"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://facebook.com/aisartbalicollection"
+                target="_blank"
+              >
+                <i class="fab fa-facebook"></i> Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- Copyright text -->
-       <div class="copyright-text-container">
-          <p>&#169; 2024 Ais Art Bali Collection. All rights reserved.</p>
-       </div>
+      <div class="copyright-text-container">
+        <p>&#169; 2024 Ais Art Bali Collection. All rights reserved.</p>
+      </div>
     </footer>
 
     <script type="module" src="scripts.js"></script>
     <script type="module" src="animation.js"></script>
+    <!-- This is for Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="swiper.js"></script>
   </body>
 </html>

@@ -7,14 +7,8 @@ html {
   padding: 0;
   box-sizing: border-box;
   background-color: #e4e3e3; /* Background utama yang lembut */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-size: 100%;
-}
-
-@supports (animation-timeline: view()) { 
-
-  
-
 }
 
 /* Banner */
@@ -183,7 +177,7 @@ html {
   object-fit: cover; /* Pastikan gambar terpotong secara proporsional */
 }
 
-.content-text img img-hover {
+.content-text img .img-hover {
   position: relative; /* Default, tidak mutlak posisinya */
   width: 100%; /* Pastikan gambar mengikuti lebar kolom teks */
   height: auto; /* Pertahankan proporsi gambar */
@@ -406,9 +400,7 @@ html {
   font-family: Poppins, sans-serif;
   display: flex; /* Make the best-seller section a flex container */
   flex-direction: column; /* Stack items vertically (text and images) */
-  justify-content: center; /* Center the content horizontally */
   align-items: center;
-  height: auto; /* Adjust the height based on the content */
 }
 
 .best-seller h2 {
@@ -416,47 +408,91 @@ html {
   margin-bottom: 1.25rem;
 }
 
-.best-seller .items {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
-}
-
 .best-seller .open-modal {
-  width: 100%;
-  overflow: hidden;
   border: none;
   background: none;
   cursor: pointer;
+  margin: 0;
 
-  transition: transform 0.2s, box-shadow 0.3s ease;
+  transition: scale 0.2s, box-shadow 0.3s ease;
 }
 
 .best-seller img {
-  width: 100%;
-  height: auto;
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
   border-radius: 0.625rem;
 }
 
 .best-seller .open-modal:hover {
-  transform: scale(1.1); /* Memperbesar gambar */
+  position: relative;
+  scale: 1.1;
   box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2); /* Menambah bayangan */
 }
 
-.best-seller .img-slider::backdrop {
-  background-color: #000000;
-}
+@media (max-width: 1450px) {
+  .best-seller img {
+    width: 600px;
+  }
 
-/* Tambahkan media query untuk penyesuaian lebih lanjut jika diperlukan */
-@media (min-width: 768px) {
-  .best-seller .items {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 4 gambar berdampingan di layar besar */
+  .swiper-slide {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #d9ae6a;
   }
 }
 
+@media (max-width: 1280px) {
+  .best-seller img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 989px) {
+  .best-seller img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 805px) {
+  .best-seller img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .best-seller img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 609px) {
+  .best-seller img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 440px) {
+  .best-seller img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .best-seller img {
+    width: 400px;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+}
 /* Sculpture page */
 
 .sculpture-content {
@@ -627,4 +663,27 @@ html {
   .feature-item h1 {
     padding: 0.625rem;
   }
+}
+
+.swiper {
+  padding-block: 2rem;
+  height: fit-content;
+  width: 90%;
+}
+
+.swiper-slide {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #d9ae6a;
+}
+
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
 }
